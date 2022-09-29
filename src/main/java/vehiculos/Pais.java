@@ -1,17 +1,17 @@
 package vehiculos;
 
 public class Pais {
-	public String pais;
+	public String nombre;
 	
-	Pais(String pais){
-		this.pais = pais;
+	Pais(String nombre){
+		this.nombre = nombre;
 	}
 
-	public String getPais() {
-		return pais;
+	public String getNombre() {
+		return nombre;
 	}
 
-	public void setPais(String pais) {
-		this.pais = pais;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 }
