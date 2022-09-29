@@ -1,15 +1,15 @@
 package vehiculos;
 
 public class Vehiculo {
-	private String placa;
-	protected int puertas;
-	protected int velocidadMaxima;
-	private String nombre;
-	private int precio;
-	private int peso;
-	protected String traccion;
-	protected Fabricante fabricante;
-	private static int CantidadVehiculos;
+	public String placa;
+	public int puertas;
+	public int velocidadMaxima;
+	public String nombre;
+	public int precio;
+	public int peso;
+	public String traccion;
+	public Fabricante fabricante;
+	public static int CantidadVehiculos;
 	
 	Vehiculo(String placa, String nombre, int precio, int peso, Fabricante fabricante){
 		this.placa = placa;

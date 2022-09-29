@@ -1,7 +1,7 @@
 package vehiculos;
 
 public class Pais {
-	protected String pais;
+	public String pais;
 	
 	Pais(String pais){
 		this.pais = pais;
