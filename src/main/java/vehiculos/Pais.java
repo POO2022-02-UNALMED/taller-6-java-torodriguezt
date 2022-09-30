@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Pais {
 	public String nombre;
-	public ArrayList<String> paises = new ArrayList<String>();
+	public static ArrayList<String> paises = new ArrayList<String>();
 	
 	public Pais(String nombre){
 		this.nombre = nombre;
@@ -18,7 +18,7 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
-	public String paisMasVendedor() {
+	public static String paisMasVendedor() {
 		int cantidad = 0;
 		String maximo = null;
 		

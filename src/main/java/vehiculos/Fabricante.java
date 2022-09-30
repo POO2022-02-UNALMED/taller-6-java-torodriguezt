@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Fabricante {
 	public String nombre;
 	public Pais pais;
-	public ArrayList<String> fabricas = new ArrayList<String>();
+	public static ArrayList<String> fabricas = new ArrayList<String>();
 	
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre = nombre;
@@ -26,7 +26,7 @@ public class Fabricante {
 		this.pais = pais;
 	}
 	
-	public String fabricaMayorVentas() {
+	public static String fabricaMayorVentas() {
 		int cantidad = 0;
 		String maximo = null;
 		
