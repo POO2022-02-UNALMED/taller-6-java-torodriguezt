@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class Fabricante {
 	public String nombre;
 	public Pais pais;
-	public static ArrayList<String> fabricas = new ArrayList<String>();
+	public static ArrayList<Fabricante> fabricas = new ArrayList<Fabricante>();
 	
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre = nombre;
 		this.pais = pais;
-		fabricas.add(this.nombre);
+		fabricas.add(this);
 	}
 	
 	public String getNombre() {
@@ -26,9 +26,9 @@ public class Fabricante {
 		this.pais = pais;
 	}
 	
-	public static String fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		int cantidad = 0;
-		String maximo = null;
+		Fabricante maximo = null;
 		
 		for (int i = 0; i<fabricas.size(); i++ ) {
 			int contador = 0;

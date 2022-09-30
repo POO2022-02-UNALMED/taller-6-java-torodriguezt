@@ -4,10 +4,11 @@ import java.util.ArrayList;
 
 public class Pais {
 	public String nombre;
-	public static ArrayList<String> paises = new ArrayList<String>();
+	public static ArrayList<Pais> paises = new ArrayList<Pais>();
 	
 	public Pais(String nombre){
 		this.nombre = nombre;
+		paises.add(this);
 	}
 
 	public String getNombre() {
@@ -18,9 +19,9 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
-	public static String paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		int cantidad = 0;
-		String maximo = null;
+		Pais maximo = null;
 		
 		for (int i = 0; i<paises.size(); i++ ) {
 			int contador = 0;
